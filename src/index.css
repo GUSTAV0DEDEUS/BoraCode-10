@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  /* colors */
+  ---font-primary-color: #FFFFFF;
+  ---font-secondary-color: #DAD8F7;
+  ---font-tertiary-color: #E7E6FB;
+  ---font-quaternary-color: #C2BFF4;
+  /* background color*/
+  ---background-color: #6D67D0;
+
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+
+}
