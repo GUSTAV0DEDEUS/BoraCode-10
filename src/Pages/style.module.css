@@ -5,3 +5,11 @@
   column-gap: 3.2rem;
   row-gap: 2.4rem;
 }
+
+@media screen and (max-width: 978px) {
+  .container{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+    place-items: center;
+  }
+}

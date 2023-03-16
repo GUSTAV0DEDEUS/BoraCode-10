@@ -12,12 +12,15 @@ export const Card = styled.div`
   padding-bottom: 1.2rem;
   justify-content: space-between;
   grid-row: 1/3;
+  @media screen and (max-width: 978px){
+    grid-row: 1;
+  }
   #icon{
     position: absolute;
-    top: -50px;
-    left: -50px;
-    width: 176px;
-    height: 176px;
+    top: -5rem;
+    left: -5rem;
+    width: 17.6rem;
+    height: 17.6rem;
   }
 `;
 

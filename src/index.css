@@ -30,3 +30,27 @@ body{
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 1160px ) {
+    :root{
+      font-size: 50%;
+    }
+}
+
+@media screen and (max-width:978px) {
+  #root{
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 476px){
+  :root{
+    font-size: 37.5%;
+  }
+
+}
+@media screen and (max-width: 388px){
+  #root{
+    height: auto;
+  }
+}

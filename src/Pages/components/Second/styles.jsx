@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
 export const ContentCard = styled.div`
-  row-gap: 1;
+  grid-row: 1;
   grid-column: 2;
   display: flex;
   gap: 2.4rem;
+  @media screen and (max-width: 978px){
+    grid-row: 3;
+    grid-column: 1;
+  }
+  @media screen and (max-width: 388px){
+    flex-direction: column;
+  }
 `;
 export const Card = styled.div`
   padding: 3.2rem 1.6rem 1.6rem;
@@ -61,18 +68,48 @@ export const Card = styled.div`
   .chart {
     display: grid;
     justify-items: center;
+    margin: 0 auto;
     position: relative;
     row-gap: 1.2rem;
+    width: 21.6rem;
+
+  }
+  .chart img{
+    width: 100%;
+  }
+  .sun{
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    height: 10.8rem;
+    width: 14.4rem;
+  }
+  .sun::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 21.6rem;
+    height: 21.6rem;
+    background: linear-gradient(
+      180deg,
+      rgba(251, 219, 96, 0.2) 0%,
+      rgba(251, 219, 96, 0) 101.89%
+    );
+
+    mask: linear(0deg, white 50%, transparent 0%);
+    -webkit-mask: linear(0deg, white 50%, transparent 0%);
+
+    rotate: 0deg;
   }
   .chart::before {
     content: "";
     width: 1.2rem;
     height: 1.2rem;
     position: absolute;
-    background:#f6c833;
+    background: #f6c833;
     border-radius: 50%;
-    top: 6px;
-    right: 72px;
+    top: .4rem;
+    right: 7.2rem;
   }
   .chart .text {
     display: flex;
@@ -92,4 +129,5 @@ export const Card = styled.div`
     color: var(---font-primary-color);
     font-size: 1.4rem;
   }
+
 `;

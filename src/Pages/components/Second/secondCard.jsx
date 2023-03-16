@@ -48,6 +48,7 @@ export default function SecondCard(){
           Horário do sol
         </p>
         <div className="chart">
+          <div className="sun"></div>
           <img src={chart} alt="Gráfico"/>
           <div className="text">
             <p>06:12 </p>
