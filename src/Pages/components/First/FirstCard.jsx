@@ -1,5 +1,5 @@
 import { Card, TextCard, Temperature, Cards } from "./styles"
-import WeatHer from '../../../assets/weatHer.svg'
+import WeatHer from '../../../assets/weather.svg'
 import IconPin from '../../../assets/iconPin.svg'
 import IconWind from '../../../assets/wind.svg'
 import IconHumidity from '../../../assets/iconHumidity.svg'
