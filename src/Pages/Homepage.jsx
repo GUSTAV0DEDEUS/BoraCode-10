@@ -1,7 +1,11 @@
+import FirstCard from "./components/First/FirstCard"
+import SecondCard from "./components/Second/secondCard"
+import styles from './style.module.css'
 export default function HomePage(){
   return(
-    <>
-      <h1>OLa</h1>
-    </>
+    <section className={styles.container}>
+      <FirstCard/>
+      <SecondCard />
+    </section>
   )
 }
